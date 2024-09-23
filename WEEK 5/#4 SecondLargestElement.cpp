@@ -8,7 +8,7 @@ int main()
 	cout<<"Enter length of array : ";
 	cin>>len;
 	int array[len];
-	int largest=array[0], second_largest=array[0];
+	int largest=INT_MIN, second_largest=INT_MIN;
 	
 	if(len<2) cout<<"Invalid Input!!";
 	else
@@ -18,8 +18,10 @@ int main()
 			cout<<"Enter element "<<i+1<<" : ";
 			cin>>array[i];
 			if(array[i]>largest){
-				second_largest = largest;
 				largest = array[i];
+			}
+			else if(array[i]<largest && array[i]>second_largest){
+				second_largest = array[i];
 			}
 		}
 //	cout<<"Here is your largest element : "<<largest;
@@ -28,4 +30,3 @@ int main()
 	
 	return 0;
 }
-
