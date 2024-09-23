@@ -16,14 +16,11 @@ int main()
 		{
 			cout<<"Enter element "<<i+1<<" : ";
 			cin>>array[i];
-			if(array[i]>largest) largest = array[i];
+			if(array[i]>largest){
+				second_largest = largest;
+				largest = array[i];
+			}
 		}
-		
-		for(int i=0; i<len; i++)
-		{
-			if(array[i]>second_largest && array[i]<largest) second_largest = array[i];
-		}
-
 //	cout<<"Here is your largest element : "<<largest;
 	cout<<"Here is your second largest element : "<<second_largest;
 	}
