@@ -4,10 +4,11 @@
 using namespace std;
 int main()
 {
-	int len, largest=0, second_largest=0;
+	int len;
 	cout<<"Enter length of array : ";
 	cin>>len;
 	int array[len];
+	int largest=array[0], second_largest=array[0];
 	
 	if(len<2) cout<<"Invalid Input!!";
 	else
