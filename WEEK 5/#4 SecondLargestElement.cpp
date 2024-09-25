@@ -25,7 +25,12 @@ int main()
 			}
 		}
 //	cout<<"Here is your largest element : "<<largest;
+	if (second_largest != INT_MIN){
 	cout<<"Here is your second largest element : "<<second_largest;
+	}
+	else {
+	cout<<"all elements are equal";
+	}
 	}
 	
 	return 0;
