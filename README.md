@@ -1,2 +1,2 @@
 # Mca week 5 code
-**note:** run your ide as admistrator for Q.4  
+**note:** run your IDE as admistrator for Q.4  
